@@ -3,8 +3,9 @@ import React, { forwardRef, useImperativeHandle } from "react";
 
 const CallApi = forwardRef(
   ({ city, setData, setError, data, setCity }, ref) => {
-    const API_KEY = "64c6f779fa1ff41f94f6f3bd50e9f577";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
+      import.meta.env.VITE_API_KEY
+    }&units=metric`;
 
     const handleCity = async () => {
       try {
