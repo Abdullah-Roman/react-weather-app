@@ -1,3 +1,3 @@
 # Live Link
 
-https://react-weather-app-ruddy-ten.vercel.app/
+https://romanreact-weather-app.netlify.app/
